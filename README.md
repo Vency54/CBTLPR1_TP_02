@@ -5,7 +5,7 @@ Nome da variável: JAVA_TOOL_OPTIONS
 Valor da variável: -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -Dconsole.encoding=UTF-8
 
 
-# Videos Demonstrativos
+# Vídeos Demonstrativos
 
 https://github.com/user-attachments/assets/f6e5d143-e443-4f84-b4da-0489e414db64
 
