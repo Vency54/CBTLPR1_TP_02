@@ -38,7 +38,7 @@ public class TP02Ex09 {
             if ((linha > 0 && linha <= 10) && (coluna > 0 && coluna <= 10)) {
                 break;
             } else {
-                System.out.println("Erro: Os numeros devem ser entre 1 e 10!");
+                System.out.println("Erro: Os números devem ser entre 1 e 10!");
                 System.out.println(" ");
 
             }
