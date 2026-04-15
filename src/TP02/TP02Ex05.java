@@ -3,10 +3,6 @@ package TP02;
 
 import java.util.*;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 /**
   * Nomes: Rayssa Silva de Oliveira e João Victor Lima Venceslau

@@ -1,24 +1,22 @@
 package TP02;
 
-
 import java.util.*;
 
 /**
  * Nomes: Rayssa Silva de Oliveira e João Victor Lima Venceslau
  *
- 3. Entrar via teclado com “N” valores quaisquer. O valor “N” (que representa a
- quantidade de números) será digitado, deverá ser positivo, porém menor que
- vinte. Caso a quantidade não satisfaça a restrição, enviar mensagem de erro e
- solicitar o valor novamente. Após a digitação dos “N” valores, exibir: a. O
- maior valor; b. O menor valor; c. A soma dos valores; d. A média aritmética
- dos valores; e. A porcentagem de valores que são positivos; f. A porcentagem
- de valores negativos;
+ * 3. Entrar via teclado com “N” valores quaisquer. O valor “N” (que representa
+ * a quantidade de números) será digitado, deverá ser positivo, porém menor que
+ * vinte. Caso a quantidade não satisfaça a restrição, enviar mensagem de erro e
+ * solicitar o valor novamente. Após a digitação dos “N” valores, exibir: a. O
+ * maior valor; b. O menor valor; c. A soma dos valores; d. A média aritmética
+ * dos valores; e. A porcentagem de valores que são positivos; f. A porcentagem
+ * de valores negativos;
  *
- Após exibir os dados, perguntar ao usuário de deseja ou não uma nova execução
- do programa. Consistir a resposta no sentido de aceitar somente “S” ou “N” e
- encerrar o programa em função dessa resposta.
+ * Após exibir os dados, perguntar ao usuário de deseja ou não uma nova execução
+ * do programa. Consistir a resposta no sentido de aceitar somente “S” ou “N” e
+ * encerrar o programa em função dessa resposta.
  */
-
 public class TP02Ex03 {
 
     public static void main(String[] args) {
@@ -39,11 +37,20 @@ public class TP02Ex03 {
             double negativos = 0;
             double media;
 
-            System.out.println("Digite o número de valores:");
-            N = sc.nextInt();
-            
-            System.out.println(" ");
+            do {
+                System.out.println("Digite o número de valores:");
+                N = sc.nextInt();
+                if (N <= 0) {
+                    System.out.println("Valor inválido!Digite de novo!");
+                    System.out.println(" ");
+                }
+                if (N >= 20) {
+                    System.out.println("Valor inválido!Digite um número menor que 20!");
+                    System.out.println(" ");
+                }
+            } while (N <= 0 || N >= 20);
 
+            System.out.println(" ");
 
             Valores = new double[N];
 
@@ -59,7 +66,7 @@ public class TP02Ex03 {
                 Valores[i] = sc.nextDouble();
 
             }
-            
+
             menor = Valores[0];
             maior = Valores[0];
 
@@ -83,7 +90,7 @@ public class TP02Ex03 {
 
             double Porc_positivos = (positivos / (double) N) * 100;
             double Porc_negativos = (negativos / (double) N) * 100;
-            
+
             System.out.println(" ");
 
             System.out.println("Valor Maior: " + maior);
@@ -92,9 +99,9 @@ public class TP02Ex03 {
             System.out.println("Média aritmética: " + media);
             System.out.printf("Porcentagem de Positivos: %.2f%%%n", Porc_positivos);
             System.out.printf("Porcentagem de Negativos %.2f%%%n", Porc_negativos);
-            
+
             System.out.println(" ");
-            
+
             System.out.println("Deseja uma nova execução do programa?");
             System.out.println("S para Sim");
             System.out.println("N para Não");

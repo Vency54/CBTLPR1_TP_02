@@ -8,12 +8,12 @@ import java.util.*;
 
 /**
  * Nomes: Rayssa Silva de Oliveira e João Victor Lima Venceslau
- * 
-8. Entrar via teclado com doze valores e armazená-los em uma matriz de ordem 3x4. Após a
-digitação dos valores solicitar uma constante multiplicativa, que deverá multiplicar cada
-valor matriz e armazenar o resultado em outra matriz de mesma ordem, nas posições
-correspondentes. Exibir as matrizes na tela, sob a forma matricial, ou seja, linhas por
-colunas.
+ *
+ * 8. Entrar via teclado com doze valores e armazená-los em uma matriz de ordem
+ * 3x4. Após a digitação dos valores solicitar uma constante multiplicativa, que
+ * deverá multiplicar cada valor matriz e armazenar o resultado em outra matriz
+ * de mesma ordem, nas posições correspondentes. Exibir as matrizes na tela, sob
+ * a forma matricial, ou seja, linhas por colunas.
  */
 public class TP02Ex08 {
 
@@ -48,6 +48,20 @@ public class TP02Ex08 {
 
         System.out.println();
 
+        System.out.println("Matriz original:");
+
+        for (int i = 0; i < linha; i++) {
+            for (int j = 0; j < coluna; j++) {
+                System.out.print(matriz[i][j] + "\t");
+            }
+            System.out.println();
+
+        }
+
+        System.out.println();
+
+        System.out.println("Matriz multiplicada:");
+        
         for (int i = 0; i < linha; i++) {
             for (int j = 0; j < coluna; j++) {
                 System.out.print(segunda_matriz[i][j] + "\t");

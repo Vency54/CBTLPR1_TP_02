@@ -1,13 +1,13 @@
 package TP02;
 
-
 import java.util.*;
 
 /**
- * Nomes: Rayssa Silva de Oliveira e João Victor Lima Venceslau 9. Entrar com
- * uma matriz de ordem MxN, onde a ordem também será escolhida pelo usuário,
- * sendo que no máximo 10x10. A matriz não precisa ser quadrática. Após a
- * digitação dos elementos, calcular e exibir a matriz transposta.
+ * Nomes: Rayssa Silva de Oliveira e João Victor Lima Venceslau
+ *
+ * 9. Entrar com uma matriz de ordem MxN, onde a ordem também será escolhida
+ * pelo usuário, sendo que no máximo 10x10. A matriz não precisa ser quadrática.
+ * Após a digitação dos elementos, calcular e exibir a matriz transposta.
  */
 public class TP02Ex09 {
 
@@ -35,12 +35,16 @@ public class TP02Ex09 {
             }
             coluna = sc.nextInt();
 
-            if (linha <= 10 && coluna <= 10) {
+            if ((linha > 0 && linha <= 10) && (coluna > 0 && coluna <= 10)) {
                 break;
             } else {
-                System.out.println("Erro: linhas e colunas não podem ser maiores que 10!");
+                System.out.println("Erro: Os numeros devem ser entre 1 e 10!");
+                System.out.println(" ");
+
             }
         }
+
+        System.out.println(" ");
 
         double[][] matriz = new double[linha][coluna];
         double[][] transposta = new double[coluna][linha];
@@ -58,6 +62,8 @@ public class TP02Ex09 {
             }
         }
 
+        System.out.println(" ");
+
         System.out.println("\nMatriz Original:");
         for (int i = 0; i < linha; i++) {
             for (int j = 0; j < coluna; j++) {
@@ -65,6 +71,8 @@ public class TP02Ex09 {
             }
             System.out.println();
         }
+
+        System.out.println(" ");
 
         System.out.println("\nMatriz transposta:");
         for (int i = 0; i < coluna; i++) {
