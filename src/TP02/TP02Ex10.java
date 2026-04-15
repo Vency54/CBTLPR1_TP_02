@@ -72,7 +72,6 @@ public class TP02Ex10 {
             System.out.println("\nMatriz inversa:");
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < m; j++) {
-                    // Acessa o lado direito da matriz aumentada
                     System.out.printf("%.2f\t", resultado[i][j + m]);
                 }
                 System.out.println();
